@@ -1,0 +1,416 @@
+
+/* BEAN TO CUP - WEBSITE STYLESHEET */
+
+/* General Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #faf7ef;
+    color: #38271f;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Header */
+
+.site-header {
+    background-color: #fffdf8;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.site-header h1 {
+    font-size: 38px;
+    margin: 0;
+    color: #38271f;
+}
+
+.site-header p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #78513b;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+
+.main-nav {
+    background-color: #38271f;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 28px;
+    padding: 15px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #f4d8a8;
+    border-bottom: 2px solid #f4d8a8;
+}
+
+/* Home Hero */
+
+.hero {
+    background-color: #eee4d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    padding: 60px 8%;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 550px;
+}
+
+.small-heading {
+    color: #6b7650;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero-content h2 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero-content p {
+    font-size: 17px;
+    color: #655247;
+}
+
+.hero-image {
+    width: 43%;
+    max-width: 470px;
+    border-radius: 180px 180px 10px 10px;
+    object-fit: cover;
+    box-shadow: 0 12px 30px rgba(56,39,31,0.15);
+}
+
+/* Buttons */
+
+.button {
+    display: inline-block;
+    background-color: #6b7650;
+    color: white;
+    padding: 13px 22px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.button:hover {
+    background-color: #4d5938;
+}
+
+/* Introduction */
+
+.introduction {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+    padding: 65px 25px 30px;
+}
+
+.introduction h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.introduction p {
+    color: #70655d;
+    font-size: 16px;
+}
+
+/* Home Cards */
+
+.explore-section {
+    padding: 40px 8% 85px;
+}
+
+.explore-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1120px;
+    margin: auto;
+}
+
+.coffee-card {
+    flex: 1 1 calc(50% - 25px);
+    min-width: 0;
+    background-color: #fffdf8;
+    border: 1px solid #e8dece;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(56,39,31,0.07);
+    scroll-margin-top: 25px;
+}
+
+.coffee-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    font-size: 28px;
+    margin: 0 0 12px;
+}
+
+.card-content p {
+    color: #70655d;
+    font-size: 15px;
+}
+
+.card-content a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #78513b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-content a:hover {
+    text-decoration: underline;
+}
+
+.coming-soon {
+    color: #6b7650 !important;
+    font-style: italic;
+    font-size: 13px !important;
+}
+
+/* Bean Types Page */
+
+.page-intro {
+    text-align: center;
+    padding: 70px 20px 40px;
+}
+
+.page-intro h2 {
+    font-size: 48px;
+    margin: 12px 0;
+}
+
+.page-intro > p:last-child {
+    max-width: 680px;
+    margin: auto;
+    color: #70655d;
+    font-size: 16px;
+}
+
+.bean-section {
+    padding: 20px 8% 90px;
+}
+
+.bean-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1120px;
+    margin: auto;
+}
+
+.bean-card {
+    flex: 1 1 calc(50% - 25px);
+    min-width: 0;
+    background-color: #fffdf8;
+    border: 1px solid #e8dece;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(56,39,31,0.07);
+}
+
+.bean-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.bean-content {
+    padding: 28px;
+}
+
+.bean-content h3 {
+    font-size: 32px;
+    margin: 0 0 15px;
+}
+
+.bean-content p {
+    font-size: 15px;
+    color: #70655d;
+}
+
+.bean-fact {
+    border-top: 1px solid #e8dece;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+.bean-fact strong {
+    color: #38271f;
+}
+
+/* Closing Section */
+
+.closing-section {
+    background-color: #38271f;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.closing-section h2 {
+    font-size: 32px;
+    margin: 0 0 15px;
+}
+
+.closing-section p {
+    max-width: 650px;
+    margin: auto;
+    color: #e2d6c9;
+}
+
+/* Footer */
+
+footer {
+    background-color: #251c17;
+    color: #ddd1c4;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 12px;
+}
+
+/* Responsive - Tablets */
+
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 25px;
+    }
+
+    .hero-content h2 {
+        font-size: 40px;
+    }
+
+    .hero-image {
+        width: 85%;
+        max-width: 450px;
+    }
+
+    .coffee-card,
+    .bean-card {
+        flex: 1 1 100%;
+    }
+
+    .explore-section,
+    .bean-section {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .page-intro h2 {
+        font-size: 38px;
+    }
+}
+
+/* Responsive - Phones */
+
+@media (max-width: 480px) {
+
+    .site-header h1 {
+        font-size: 30px;
+    }
+
+    .main-nav {
+        gap: 8px 14px;
+        padding: 12px;
+    }
+
+    .main-nav a {
+        font-size: 12px;
+    }
+
+    .hero-content h2 {
+        font-size: 34px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .introduction h2,
+    .explore-section h2 {
+        font-size: 28px;
+    }
+
+    .page-intro h2 {
+        font-size: 34px;
+    }
+
+    .coffee-card img,
+    .bean-card img {
+        height: 190px;
+    }
+
+    .card-content,
+    .bean-content {
+        padding: 20px;
+    }
+
+    .closing-section h2 {
+        font-size: 26px;
+    }
+}
